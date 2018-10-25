@@ -2092,7 +2092,7 @@
             var highScoreStr = (this.defaultString +
                 distance).substr(-this.maxScoreUnits);
 
-            this.highScore = ['10', '11', ''].concat(highScoreStr.split(''));
+            this.highScore = ['10',''].concat(highScoreStr.split(''));
         },
 
         /**
