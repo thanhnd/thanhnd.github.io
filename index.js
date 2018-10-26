@@ -357,13 +357,14 @@
 
             this.containerEl = document.createElement('div');
             this.containerEl.className = Runner.classes.CONTAINER;
+            this.containerEl.style.background = '#29a4b6';
 
             // Player canvas container.
             this.canvas = createCanvas(this.containerEl, this.dimensions.WIDTH,
                 this.dimensions.HEIGHT, Runner.classes.PLAYER);
 
             this.canvasCtx = this.canvas.getContext('2d');
-            this.canvasCtx.fillStyle = '#f7f7f7';
+            this.canvasCtx.fillStyle = '#f70000';
             this.canvasCtx.fill();
             Runner.updateCanvasScaling(this.canvas);
 
@@ -2211,7 +2212,7 @@
         this.canvas = canvas;
         this.canvasCtx = canvas.getContext('2d');
         this.xPos = containerWidth - 50;
-        this.yPos = 30;
+        this.yPos = 80;
         this.currentPhase = 0;
         this.opacity = 0;
         this.containerWidth = containerWidth;
@@ -2389,8 +2390,8 @@
      */
     HorizonLine.dimensions = {
         WIDTH: 900,
-        HEIGHT: 12,
-        YPOS: 127
+        HEIGHT: 50,
+        YPOS: 120
     };
 
 
@@ -2527,7 +2528,7 @@
         BG_CLOUD_SPEED: 0.2,
         BUMPY_THRESHOLD: .3,
         CLOUD_FREQUENCY: .5,
-        HORIZON_HEIGHT: 16,
+        HORIZON_HEIGHT: 200,
         MAX_CLOUDS: 6
     };
 
